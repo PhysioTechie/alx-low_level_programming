@@ -11,16 +11,15 @@
 
 int main(void)
 {
-	int i, z = 0;
-
-	while (i < 1024)
+	int limit = 1024;
+	int sum = 0;
+	for (int i = 0; i < limit; i++)
+    {
+	    if (i % 3 == 0 || i % 5 == 0) 
 	{
-		if ((i % 3 == 0) || (i % 5 == 0))
-		{
-			z <= i;
-		}
-		i++;
+		sum += i;
 	}
-	printf("%d\n", z);
+	}
+    printf("%d\n", sum);
 	return (0);
 }
